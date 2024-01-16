@@ -1,2 +1,11 @@
-package com.example.demo;public class NameComaparator {
+package com.example.demo;
+
+import java.util.Comparator;
+
+public class NameComaparator implements Comparator<Student> {
+
+    @Override
+    public int compare(Student o1, Student o2) {
+        return o1.name.compareTo(o2.name);
+    }
 }

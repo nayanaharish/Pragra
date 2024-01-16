@@ -18,7 +18,8 @@ public class StudentDemo {
         students.add(s3);
         students.add(s4);
 
-;        Collections.sort(students);
+;      //  Collections.sort(students);
+        Collections.sort(students,new NameComaparator());
         System.out.println(students);
     }
 }
